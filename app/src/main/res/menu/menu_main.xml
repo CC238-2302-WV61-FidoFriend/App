@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/profile_icon"
+        android:title="Profile"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/home_icon"
+        android:title="Home"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:id="@+id/nav_appointments"
+        android:icon="@drawable/appointment_icon"
+        android:title="Appointments"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:id="@+id/nav_service"
+        android:icon="@drawable/service_icon"
+        android:title="Serivces"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:id="@+id/nav_products"
+        android:icon="@drawable/product_icon"
+        android:title="Products"
+        app:showAsAction="ifRoom"
+        />
+</menu>
