@@ -26,7 +26,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Username or Email Address:"
+        android:text="Email Address:"
         android:textSize="18dp"
         android:layout_margin="20dp"
         />

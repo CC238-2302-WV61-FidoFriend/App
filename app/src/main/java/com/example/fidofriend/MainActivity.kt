@@ -32,6 +32,7 @@ class MainActivity : AppCompatActivity() {
             R.id.nav_appointments -> Toast.makeText(this, "Appointments", Toast.LENGTH_SHORT).show()
             R.id.nav_service -> Toast.makeText(this, "Services", Toast.LENGTH_SHORT).show()
             R.id.nav_products -> Toast.makeText(this, "Products", Toast.LENGTH_SHORT).show()
+            R.id.nav_logout -> startActivity(Intent(this, Login::class.java))
         }
 
         return super.onOptionsItemSelected(item)
