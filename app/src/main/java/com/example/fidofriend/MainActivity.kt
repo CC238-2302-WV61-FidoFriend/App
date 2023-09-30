@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.widget.Toolbar
 
@@ -17,6 +18,12 @@ class MainActivity : AppCompatActivity() {
         // Configurar el Toolbar como ActionBar
         val toolbar: Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
+
+        var newPet: Button = findViewById(R.id.newPetBtn)
+
+        newPet.setOnClickListener() {
+            startActivity(Intent(this, PetRegister::class.java))
+        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {

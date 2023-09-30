@@ -17,6 +17,14 @@
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="?attr/colorPrimary" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="New Pet"
+            android:id="@+id/newPetBtn"
+            />
+
     </com.google.android.material.appbar.AppBarLayout>
 
 
