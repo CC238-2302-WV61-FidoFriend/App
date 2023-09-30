@@ -36,7 +36,7 @@ class Login : AppCompatActivity() {
         val passwordText: EditText = findViewById(R.id.txtPassword)
 
         createAccountBtn.setOnClickListener() {
-            startActivity(Intent(this, register_account::class.java))
+            startActivity(Intent(this, Register::class.java))
         }
 
         loginButton.setOnClickListener() {
@@ -45,7 +45,7 @@ class Login : AppCompatActivity() {
                 .enqueue(object : Callback<User> {
                     override fun onResponse(call: Call<User>, response: Response<User>) {
                         user = response.body()!!
-                        val toastMessage = "Welcome, ${user.firstName}!" // Customize the message as needed
+                        val toastMessage = "Welcome, ${user.firstName}!"
                         Toast.makeText(this@Login, toastMessage, Toast.LENGTH_SHORT).show()
                         startActivity(Intent(this@Login, MainActivity::class.java))
                     }

@@ -1,6 +1,7 @@
 package Interface
 
 import Beans.LoginBody
+import Beans.RegisterBody
 import Beans.User
 import retrofit2.Call
 import retrofit2.http.Body
@@ -14,4 +15,7 @@ interface FidoFriendApi {
 
     @POST("/api/User/login")
     fun loginUser(@Body requestBody: LoginBody): Call<User>
+
+    @POST("/api/User")
+    fun registerUser(@Body requestBody: RegisterBody): Call<User>
 }
